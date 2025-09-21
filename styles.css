@@ -1,0 +1,27 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Box to animate */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  margin: 2rem auto;
+  transition: transform 0.5s ease;
+}
+
+/* Animation trigger class */
+.animate {
+  animation: bounce 1s ease-in-out;
+}
+
+/* Keyframe animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
